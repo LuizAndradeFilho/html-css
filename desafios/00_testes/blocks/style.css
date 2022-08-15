@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+
+body {
+    background-color: black;
+
+}
+
+#main {
+    background-image: url(images/senna_helmet.jpg);
+    width: 980px;
+    height: 551px;
+    margin: auto;
+}
+
+h1 {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.103);
+    width: 600px;
+
+    margin: auto;
+   
+    text-align: center;
+    
+    padding: 15px;
+    
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 5px;
+}
+
+a {
+    text-decoration: none;
+    opacity: 100%;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    opacity: 100%;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+}

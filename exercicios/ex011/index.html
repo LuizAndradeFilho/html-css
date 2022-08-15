@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/brava_tcr_p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/brava_tcr_m.jpg" type="image/png">
+        <source media="(max-width:2030px)" srcset="images/brava_tcr_g.jpg">
+        <img src="images/brava_tcr_gg.jpg" alt="Imagem Flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Enough - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/Winning - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu Navegador nao consegue reproduzir o audio
+        <a href="midia/guanacast-33.mp3" target="_blank" rel="external">Clique aqui para baixar o arquivo</a></p>
+        <!--audio src="midia/Winning - NEFFEX.mp3" controls autoplay></audio>-->
+    </audio><br>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="images/brava_tcr_p.jpg" type="image/jpg">
+        <img src="images/brava_tcr_m.jpg" alt="image_brava">
+    </picture>
+
+
+</body>
+</html>

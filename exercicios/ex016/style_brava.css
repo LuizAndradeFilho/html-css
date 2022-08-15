@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+}
+
+body {
+   background-image: url(images/brava_tcr_13.jpg);
+    }
+
+h1 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    }
+
+h2 {
+    color: #F0B300;
+    text-align: center;
+    }
+
+main {
+    background-color: rgba(255, 255, 255, 0.925);
+    width: 500px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 5px;
+    
+    
+}
+

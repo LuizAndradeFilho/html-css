@@ -1,0 +1,153 @@
+@charset 'UTF8';
+
+@font-face {
+    font-family: 'globo';
+    src: url(fonts/Globotipo-Web-Bold.ttf) format('truetype');
+}
+
+:root {
+    --cor-globo: #0669de;
+    --cor-g1: #c4170c;
+    --cor-ge: #06aa48;
+    --cor-gshow: #ff6700;
+    --cor-play: #fb0234;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-family: 'globo';
+    background-color: white;
+    height: 50px;
+    padding: 10px;
+    padding-left: 80px;
+    position: relative; 
+}
+
+nav > a {
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+    left: 5%;
+    transform: translate(-50%, -50%); 
+    padding: 10px;
+    font-size: 1.2em;
+    letter-spacing: -.05em;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+
+.globo {
+    color: var(--cor-globo);
+}
+
+.g1 {
+    color: var(--cor-g1);
+}
+
+.ge {
+    color: var(--cor-ge);
+}
+
+.gshow {
+    color: var(--cor-gshow);
+}
+
+.globoplay {
+    color: var(--cor-play);
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+header {
+    background-color: var(--cor-ge);
+    color: white;
+    font-family: 'globo';
+    text-align: center;
+    height: 80px;
+    position: relative;    
+}
+
+.top {
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 900px;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+div.caralho {
+    background-color: #ffffff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+       
+}
+
+img {
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: none;    
+}
+
+img:hover {
+    opacity: 80%;
+    transition: 0.2s ease-in;  
+}
+
+.chamada {
+    background-color: #06aa48;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    max-width: 400px;
+    height: 100px;
+    font-family: 'globo';
+    font-size: 1.2em;
+    padding: 15px;
+    margin-bottom: 30px;   
+    border-style: none;
+    border-color: black;
+    
+}
+
+p.chamada > a {
+    color: white;
+    text-decoration: none;
+}
+
+p.chamada > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.rodape {
+    font-size: .5em;
+    font-family: 'globo';
+}
+

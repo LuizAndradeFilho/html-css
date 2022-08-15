@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in, px*, pt, pc
+
+            Medidas Relativas
+            em* (altura do M maiusculo), ex, rem (root body), vw (%viewport), vh (altura viewport)
+
+            vamos usar PX e EM como recomendacao da W3C
+            16px geramente = 1em
+            */
+
+            font-size: 1em; 
+            /* tamanho padrao de uma fonte 16px --- em funciona como o porcentagem da fonte padrao 16px*/
+
+            font-weight: bolder;
+            /* lighter normal bold bolder*/
+
+            font-style: italic;
+            /* italic, normal*/
+         }
+
+         h1 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            /* Shorthand Font
+            font style - font weight - font size - font family
+            */
+            font: italic bolder 3em 'Verdana';
+
+        }
+
+        h2 {
+            font: normal bold 2em "Times New Roman";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis magnam nesciunt repudiandae voluptas, ut sint repellendus quos fuga aliquid totam. Odit molestias doloremque necessitatibus, dolores accusamus illo nemo. Totam, fugit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, sapiente deserunt dolorem possimus necessitatibus nesciunt consectetur, aperiam quo voluptatum odio, delectus asperiores. Alias, voluptatem expedita necessitatibus maiores quas amet aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus officia repellendus error dolorum iusto exercitationem? Veritatis adipisci quas impedit quos, accusamus officiis! Est sunt quibusdam voluptatum ad ea inventore!</p>
+    <h2>Subtitulo de exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia architecto maxime rem harum, magni deserunt quisquam ut, possimus dicta, fugiat vitae repellendus neque accusamus. Sit iusto molestiae cum labore ducimus!</p>
+</body>
+</html>
