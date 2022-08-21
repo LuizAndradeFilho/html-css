@@ -89,7 +89,20 @@ section.image > p {
     display: inline-block;
     padding: 50px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.26);    
+    background-color: rgba(0, 0, 0, 0.596);   
+    text-shadow: 1px 1px 0px black; 
+}
+
+.img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+.img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
@@ -98,3 +111,4 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
