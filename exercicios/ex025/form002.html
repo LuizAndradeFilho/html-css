@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            height: 98vh;          
+            background-color: rgb(114, 24, 114);
+        }
+
+        div.main {           
+            background-color: blue;
+            width: 1200px;
+            height: 600x;                       
+            
+        }                    
+        div.form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            height: 600px;
+            width: 600px; 
+            background-color: brown;            
+        }
+
+        div.mainimage {            
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">        
+        <div class="form">
+                <h1>Welcome to Brava</h1>
+                <form action="cadastro.php" method="post" autocomplete="off">
+                    <div>
+                        <label for="iusu">Usuario</label>
+                        <input type="text" name="usu" id="iusu" placeholder="your name here">
+                    </div>
+                    <div>
+                        <label for="ipassword">Senha</label>
+                        <input type="password" name="password" id="ipassword">
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+        </div>
+        <div class="mainimage">
+            hi   
+        </div>        
+    </div>
+</body>
+</html>
