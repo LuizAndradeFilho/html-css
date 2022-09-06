@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
     <h1>Exemplo de Formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <div>
             <label for="cor">Cor:</label>
-            <input type="color" name="cor" id="cor">
+            <input type="color" name="cor" id="cor" value="#00ff00">
+        </div>
+
+        <div>
+            <label for="nivel">Nivel de satisfacao: </label>
+            <input type="range" name="nivel" id="nivel" min="1" max="5">
+        </div>
+
+        <div>
+            <label for="foto">Fto do Perfil: </label>
+            <input type="file">
         </div>
 
         <div>
