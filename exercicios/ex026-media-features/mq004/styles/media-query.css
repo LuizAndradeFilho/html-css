@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* Todas as medias */
+
+/* Typical Device Breakpoints
+
+Pequenas Telas: ate 600px
+Celular: 600 ate 768px
+Tablet: 768 ate 992px
+Desktop: 992 ate 1200px
+Grandes Telas: acim de 1200px
+
+Using min-width
+
+https://devfacts.com/media-queries-breakpoints-2022/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+Using max-width
+
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... } 
+
+*/
+
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace; 
+    }
+
+    body {
+         /* desnecessario background pra print */
+        background-image: url(../images/back-print.jpg);         
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+        font-size: 1em;
+    }
+
+    main::after {
+        content: 'Essa versao foi feita exclusivamente para impressao.';
+        text-decoration: overline;
+
+    }
+
+    h1{
+        text-shadow: none;        
+        color: black;
+    }
+
+    img#phone { display:none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   
+    body {       
+        background-image: url(../images/back-tablet.jpg);             
+    } 
+
+    img#phone { display:none; }
+    img#tablet { display:block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    img#phone { display:none; }
+    img#tablet { display:none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+/* Grandes Telas */
+@media screen and (min-width: 1200px) {
+
+    main {
+        width: 700px;
+    }
+    
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+    img#phone { display:none; }
+    img#tablet { display:none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}
