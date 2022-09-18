@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Brava</h1>
+        <h2>Racing Team</h2>
+        <span id= "burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Brava Racing Team</a></li>
+                <li><a href="#">Automobilismo Virtual</a></li>
+                <li><a href="#">Temporada 2023</a></li>
+                <li><a href="#">Brava na Midia</a></li>
+                <li><a href="#">Orcamento</a></li>
+                <li><a href="#">Cotas</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Bem Vindo!</h2>
+            <p>Olá, futuro parceiro! Seja bem vindo ao nosso projeto de cotas de patrocínio para o ano de 2023.</p>            
+            <p>Esperamos que todas as informações contidas neste projeto mobile sejam suficientes para esclarecer e tirar todas as suas dúvidas quanto a sua entrada para ajudar e apoiar a Brava a continuar crescendo no cenário do automobilismo virtual brasileiro.</p>            
+            <p>Uma informação importante: Sempre que falarmos em AV, neste projeto, é referente ao Automobilimo Virtual.
+            </p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {            
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+        }
+    </script>
+</body>
+</html>

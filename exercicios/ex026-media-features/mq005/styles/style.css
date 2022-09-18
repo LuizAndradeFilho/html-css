@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'danube';
+    src: url(../fonts/DANUB___.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url(../fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'globo';
+    src: url(../fonts/Globotipo-Web-Bold.ttf) format('truetype');
+
+
+    
+}
+
+:root {
+    --font1: 'danube';
+    --font2: 'Bebas';
+    --font3: 'Verdana, Geneva, Tahoma, sans-serif';
+    --cor1: #0B1C54;
+    --cor2: gray;   
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #13286e;
+}
+
+header {
+    background-color: var(--cor2)
+}
+
+header > h1, h2 {
+    padding: 1px;
+    text-align: center;
+    font-family: var(--font1);
+    color: white; 
+}
+
+header > h2 {
+    font-size: .6em; 
+    letter-spacing: .5em;     
+    padding-top: 0px;
+}
+
+span.material-icons {
+    display: block;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+span.material-icons:hover {
+    background-color: #0B1C54;
+    transition: .2s;
+    
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .1em;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor1);
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.514);
+    transition: 1s;
+}
+
+menu > ul > li > a:hover {
+    background-color: #13286e;
+    transition: .2s;
+    
+}
+
+main {
+    background-color: white;
+    margin: auto; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article {
+    padding: 20px; 
+}
+
+article > h2 {
+    font-family: var(--font2);
+    font-size: 2em;
+    text-align: left;
+    color: black;    
+}
+
+article > p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
