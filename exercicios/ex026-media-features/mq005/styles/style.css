@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: #13286e;
+    background-color: #13286e;  
 }
 
 header {
@@ -97,17 +97,17 @@ menu > ul > li > a:hover {
 }
 
 main {
+    width: 90vw;
     background-color: white;
-    margin: auto; 
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 750px;
+    margin: auto;    
     margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
 }
 
 article {
-    padding: 20px; 
+    padding: 20px;     
 }
 
 article > h2 {

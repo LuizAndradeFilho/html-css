@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Brava</h1>
         <h2>Racing Team</h2>
@@ -36,11 +37,19 @@
 
     <script>
         function clickMenu() {            
-                if (itens.style.display == 'block') {
-                    itens.style.display = 'none'
-                } else {
-                    itens.style.display = 'block'
-                }
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 992) {
+                itens.style.display = 'block'
+            } else {
+                itens.styel.display = 'none'
+            }
         }
     </script>
 </body>
